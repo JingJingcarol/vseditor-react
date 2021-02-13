@@ -1,0 +1,33 @@
+.menu{
+  display: flex;
+  background: #353535;
+  color: #fff;
+  line-height: 20px;
+  >div {
+    position: relative;
+    .menuName{
+      padding: 0 8px;
+      cursor: pointer;
+      &.active{
+        background-color: #ff32be;
+      }
+    }
+    .subMenu {
+      border-radius: 2px;
+      display: none;
+      position: absolute;
+      background: rgba(53, 53, 53, .95);
+      min-width: 100px;
+      padding: 8px 0;
+      box-shadow: 0 0 4px #3e002e;
+      >div{
+        &:hover{
+          background-color: #ff32be;
+        }
+      }
+      &.show{
+        display: block
+      }
+    }
+  }
+}
